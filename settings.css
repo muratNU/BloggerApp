@@ -1,0 +1,38 @@
+#options-list-cont > ul {
+  padding: 10px;
+  padding-top: 50px;
+}
+
+#options-list-cont > ul > li {
+  margin: 5px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header > nav {
+    width: 100%;
+  }
+
+  .header ul {
+    justify-content: space-between;
+  }
+
+  .header li {
+    margin: 10px 6%;
+  }
+}

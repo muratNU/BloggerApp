@@ -1,0 +1,83 @@
+#back-button-container {
+  margin: 20px;
+  font-size: 18px;
+}
+
+#user-info-container {
+  align-items: center;
+  justify-content: space-evenly;
+  height: 350px;
+  padding: 25px;
+}
+
+#user-info-container > img {
+  width: 20%;
+  height: 60%;
+  border-radius: 80px;
+}
+
+/* 
+    A parent element must have a fixed height 
+*/
+#section-user-bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 90%;
+}
+
+#text-content-container {
+  height: 60%;
+  width: 80%;
+  overflow-y: auto;
+}
+
+#text-content-container h4 {
+  display: inline-block;
+  margin: 5px;
+  font-size: 18px;
+}
+
+#text-content-container p {
+  display: inline;
+  max-width: 800px; /* Limits the width of paragraphs to improve readability */
+  margin: 20px auto; /* Centers the paragraph and adds vertical spacing */
+  font-size: 18px; /* Sets a comfortable reading size for the text */
+  line-height: 1.6; /* Increases line spacing to enhance readability */
+  color: #333; /* Sets a darker grey color for easier reading */
+}
+
+#contact-information,
+#personal-information {
+  padding: 25px;
+  font-size: 18px;
+  line-height: 1.6; /* Increases line spacing to enhance readability */
+  color: #333;
+}
+
+#contact-information {
+  padding-top: 0px;
+}
+
+#contact-information h3 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 680px) {
+  #user-info-container {
+    flex-direction: column;
+    display: inline-flex;
+  }
+  #user-info-container > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+  }
+  #section-user-bio {
+    width: 100%;
+  }
+  #section-user-bio > #text-content-container {
+    width: 90%;
+  }
+}

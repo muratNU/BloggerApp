@@ -1,0 +1,217 @@
+/* Adding CSS variables to adjust the color of the application */
+/* :root {
+  --text-color: white;
+  --body-background-color: black;
+  --sticky-backgorund-color: rgb(239, 236, 236);
+} */
+
+:root {
+  --text-color: black;
+  --body-background-color: white;
+  /* Sticky here refers to the sticky elems */
+  --sticky-backgorund-color: rgb(239, 236, 236);
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 80px;
+  align-items: center;
+}
+
+#main-content-container {
+  max-width: 800px;
+  margin-top: 20px;
+  align-items: center;
+  height: 100%;
+}
+
+#main-content-section {
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.flex-display-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-display-col {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  margin-top: 5px;
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  top: 0;
+  max-height: 160px;
+  padding: 15px;
+}
+
+.header,
+footer {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--sticky-backgorund-color);
+  position: sticky;
+  z-index: 1;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header a:hover,
+.header a:focus {
+  color: #0056b3; /* Changes text color on hover/focus */
+  text-decoration: underline; /* Adds underline on hover/focus */
+}
+
+.header > nav {
+  margin: 10px;
+}
+
+.header li {
+  margin: 10px 60px;
+}
+
+.header img {
+  border-radius: 120px;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+}
+
+.header img:hover {
+  scale: 1.02;
+}
+
+input[type="search"]::placeholder {
+  color: grey; /* Sets the color of the placeholder text */
+  font-style: italic; /* Makes the placeholder text italic */
+  text-align: left; /* Aligns the placeholder text to the left */
+}
+
+input[type="search"] {
+  padding-left: 10px; /* Adds space inside the input on the left */
+}
+
+#search-box-form {
+  width: 100%;
+  align-items: center;
+}
+
+#search-box-form > input {
+  width: 90%;
+  height: 40px;
+  border-radius: 20px;
+}
+
+h {
+  font-weight: 800;
+  font-size: larger;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.icon {
+  margin: 10px;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  scale: 1.1;
+  color: blue;
+}
+
+#typing-box-form {
+  width: 90%;
+  max-width: 700px;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#typing-box-form > textarea {
+  width: calc(100% - 20px);
+
+  /* Note that this would only disable manuel resizing ability for the user, 
+  i.e. any script to resize its height dynamically will continue to work*/
+  resize: none;
+
+  border: none;
+  background-color: rgb(239, 236, 236);
+  overflow-y: auto;
+  max-height: 20vh;
+  line-height: 1.6em;
+  outline: none;
+}
+
+#typing-box-form > button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 30px;
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+  font-size: larger;
+}
+
+#typing-box-form > button:hover {
+  scale: 1.03;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+p {
+  text-align: left;
+  text-indent: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}

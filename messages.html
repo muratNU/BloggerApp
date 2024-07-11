@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A html page that allows the users of Blogerr app to access their chats"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="messages.css" />
+    <title>Messages page of the Blogger App</title>
+  </head>
+  <body>
+    <header class="flex-display-row container header">
+      <a href="profile.html">
+        <img
+          src="images/tinified/avatar-john-doe.jpg"
+          alt="User's Profile Picture"
+        />
+      </a>
+      <nav>
+        <ul class="flex-display-row container">
+          <li><a href="/">Feed</a></li>
+          <li><a href="./messages.html">Messages</a></li>
+          <li><a href="./settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main-content-section" class="flex-display-col container">
+      <div id="main-content-container" class="flex-display-col container">
+        <form id="search-box-form" class="flex-display-col container">
+          <input type="search" name="query" placeholder="Search" />
+        </form>
+        <section id="messages-container" class="flex-display-col container">
+          <a href="chat.html">
+            <div id="message-container" class="flex-display-row">
+              <div id="h-container">
+                <h4>[title]</h4>
+              </div>
+              <div id="lsm-container">
+                <h4>[last sent message]</h4>
+              </div>
+            </div>
+          </a>
+          <a href="chat.html">
+            <div id="message-container" class="flex-display-row">
+              <div id="h-container">
+                <h4>[title]</h4>
+              </div>
+              <div id="lsm-container">
+                <h4>[last sent message]</h4>
+              </div>
+            </div>
+          </a>
+          <a href="chat.html">
+            <div id="message-container" class="flex-display-row">
+              <div id="h-container">
+                <h4>[title]</h4>
+              </div>
+              <div id="lsm-container">
+                <h4>[last sent message]</h4>
+              </div>
+            </div>
+          </a>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
