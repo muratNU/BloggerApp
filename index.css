@@ -1,20 +1,20 @@
 /* Adding CSS variables to adjust the color of the application */
+/* Refer to these values for the dark mode */
 /* :root {
   --text-color: white;
   --body-background-color: black;
-  --sticky-backgorund-color: rgb(239, 236, 236);
+  --sticky-background-color: rgb(65, 63, 63);
+  --feed-content-color: #413f3f;
 } */
 
 :root {
   --text-color: black;
   --body-background-color: white;
-  /* Sticky here refers to the sticky elems */
-  --sticky-backgorund-color: rgb(239, 236, 236);
-}
-
-body {
-  background-color: var(--body-background-color);
-  color: var(--text-color);
+  /* Sticky here refers to the sticky elems  */
+  --sticky-background-color: rgb(239, 236, 236);
+  --feed-content-color: #f9f9f9;
+  --font-size: 16px;
+  --font-family: serif;
 }
 
 .container {
@@ -52,6 +52,10 @@ html,
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--body-background-color);
+  color: var(--text-color);
 }
 
 .flex-display-row {
@@ -87,14 +91,14 @@ footer {
 .header,
 footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  background-color: var(--sticky-backgorund-color);
+  background-color: var(--sticky-background-color);
   position: sticky;
   z-index: 1;
 }
 
 .header a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -125,13 +129,15 @@ footer {
 }
 
 input[type="search"]::placeholder {
-  color: grey; /* Sets the color of the placeholder text */
-  font-style: italic; /* Makes the placeholder text italic */
-  text-align: left; /* Aligns the placeholder text to the left */
+  color: grey;
+  font-style: italic;
+  text-align: left;
 }
 
 input[type="search"] {
-  padding-left: 10px; /* Adds space inside the input on the left */
+  padding-left: 10px;
+  /* color: inherit; */
+  font: inherit;
 }
 
 #search-box-form {
@@ -179,11 +185,13 @@ h {
   width: calc(100% - 20px);
 
   /* Note that this would only disable manuel resizing ability for the user, 
-  i.e. any script to resize its height dynamically will continue to work*/
+  i.e. any script to resize its height dynamically will continue to work */
   resize: none;
 
   border: none;
-  background-color: rgb(239, 236, 236);
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
   overflow-y: auto;
   max-height: 20vh;
   line-height: 1.6em;
@@ -213,5 +221,9 @@ p {
   text-indent: 0;
   font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
 }

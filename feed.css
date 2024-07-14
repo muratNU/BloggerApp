@@ -16,7 +16,7 @@
   align-items: center; /* Ensures the image and text are aligned at their centers */
   justify-content: center; /*Aligns content to the left for a traditional flow */
   padding: 20px; /* Adds padding around the content for better spacing */
-  background-color: #f9f9f9; /* A light background color for better readability */
+  background-color: var(--feed-content-color);
   border: 1px solid #ddd; /* Subtle border around the container */
   border-radius: 8px; /* Rounded corners */
   max-width: 800px; /* Restricts maximum width for better reading experience */
@@ -35,7 +35,9 @@
 
 #blog-summary-container h3 {
   margin-top: 0;
-  color: #2a2a2a; /* Slightly darker than the paragraph text for emphasis */
+  color: var(
+    --text-color
+  ); /* Slightly darker than the paragraph text for emphasis */
   font-size: 1.5rem; /* Larger font size for heading */
   font-weight: 600; /* Semi-bold for better visibility */
   margin-bottom: 10px; /* Space between the header and paragraph */

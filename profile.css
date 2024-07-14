@@ -1,6 +1,5 @@
 #back-button-container {
   margin: 20px;
-  font-size: 18px;
 }
 
 #user-info-container {
@@ -36,24 +35,20 @@
 #text-content-container h4 {
   display: inline-block;
   margin: 5px;
-  font-size: 18px;
 }
 
 #text-content-container p {
   display: inline;
-  max-width: 800px; /* Limits the width of paragraphs to improve readability */
-  margin: 20px auto; /* Centers the paragraph and adds vertical spacing */
-  font-size: 18px; /* Sets a comfortable reading size for the text */
-  line-height: 1.6; /* Increases line spacing to enhance readability */
-  color: #333; /* Sets a darker grey color for easier reading */
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
 }
 
 #contact-information,
 #personal-information {
   padding: 25px;
-  font-size: 18px;
-  line-height: 1.6; /* Increases line spacing to enhance readability */
-  color: #333;
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
 #contact-information {

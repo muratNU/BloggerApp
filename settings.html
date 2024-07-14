@@ -55,9 +55,9 @@
             <ul class="dropdown-menu">
               <li>
                 <a
-                  class="dropdown-item"
+                  class="dropdown-item active"
                   href="#"
-                  onclick="setTheme('system');updateThemeSelection('system');"
+                  onclick="setTheme('system');updateSelection('theme', 'system');"
                   >System</a
                 >
               </li>
@@ -65,7 +65,7 @@
                 <a
                   class="dropdown-item"
                   href="#"
-                  onclick="setTheme('dark');updateThemeSelection('dark');"
+                  onclick="setTheme('dark');updateSelection('theme', 'dark');"
                   >Dark</a
                 >
               </li>
@@ -73,27 +73,91 @@
                 <a
                   class="dropdown-item"
                   href="#"
-                  onclick="setTheme('light');updateThemeSelection('light');"
+                  onclick="setTheme('light');updateSelection('theme', 'light');"
                   >Light</a
                 >
               </li>
             </ul>
           </div>
         </li>
-        <li>
+        <li id="fontsize-list-item">
           Adjust Font Size
           <div class="dropdown">
-            <button class="dropdown-button dropdown-toggle">
-              Dropdown Button
+            <button
+              class="btn btn-sm btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              16px
             </button>
             <ul class="dropdown-menu">
-              <li><a href="#">Item 1</a></li>
-              <li><a href="#">Item 2</a></li>
-              <li><a href="#">Item 3</a></li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="setFontSize('12px');updateSelection('fontsize', '12px');"
+                  >12px</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item active"
+                  href="#"
+                  onclick="setFontSize('16px');updateSelection('fontsize', '16px');"
+                  >16px</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="setFontSize('20px');updateSelection('fontsize', '20px');"
+                  >20px</a
+                >
+              </li>
             </ul>
           </div>
         </li>
-        <li>Adjust Font Type</li>
+        <li id="fontfamily-list-item">
+          Adjust Font Family
+          <div class="dropdown">
+            <button
+              class="btn btn-sm btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Serif
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item active"
+                  href="#"
+                  onclick="setFontFam('serif');updateSelection('fontfamily', 'serif');"
+                  >Serif</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="setFontFam('sans-serif');updateSelection('fontfamily', 'sans-serif');"
+                  >Sans-serif</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="setFontFam('system-ui');updateSelection('fontfamily', 'system-ui');"
+                  >System-ui</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </section>
     <script
@@ -101,7 +165,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script type="text/JavaScript" src="index.js"></script>
-    <script type="text/JavaScript" src="settings.js"></script>
+    <script type="text/JavaScript" src="scripts/index.js"></script>
+    <script type="text/JavaScript" src="scripts/settings.js"></script>
   </body>
 </html>
